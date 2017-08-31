@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <link href="static/css/app.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Lato:400,700,400italic:latin', 'Volkhov::latin']
+      }
+    });
+  </script>
+
+  <noscript>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+  </noscript>
+
+</head>
+
+<body id="top-of-page">
+
+  <!-- Top Navigation -->
+  <div id="navigation" class="sticky">
+    <nav class="top-bar" role="navigation" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1 class="show-for-small-only"><a href="/" class="icon-tree"> Justin James</a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/speaking">Speaking Engagements</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+
+        <ul class="right">
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/search">search</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+  <!-- Masthead -->
+  <div id="masthead-no-image-header">
+    <div class="row">
+      <div class="small-12 columns">
+        <a id="logo" href="/" title="Justin James – Web Developer, Speaker, and Agile/DevOps ennthusiast from Arizona">
+            <img src="/static/img/logo.png" alt="Justin James – Web Developer, Speaker, and Agile/DevOps ennthusiast from Arizona">
+          </a>
+      </div>
+      <!-- /.small-12.columns -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /#masthead -->
+
+  <!-- Widgets Content -->
+
+  <div class="row t60">
+    <div class="medium-4 columns frontpage-widget">
+      <a href="/blog/">            
+            <img src="/static/img/home/writing-book-302x182.jpg" alt="" />
+      </a>
+      <h2 class="font-size-h3 t10"><a href="/blog/">Blog</a></h2>
+      <p>My notebook of technical information to share with you. If I struggled with it or found something cool, it is documented
+        here.
+      </p>
+      <p><a class="button tiny radius" href="/blog/">More ›</a></p>
+    </div>
+    <div class="medium-4 columns frontpage-widget">
+      <a href="/speaking/">            
+            <img src="/static/img/home/mic-4-302x182.jpg" alt="" />
+      </a>
+      <h2 class="font-size-h3 t10"><a href="/speaking/">Speaking Engagements</a></h2>
+      <p>As much as I love to write code, I enjoy teaching even more. Find out where I will be speaking next and see past presentations.</p>
+      <p><a class="button tiny radius" href="/speaking/">More ›</a></p>
+    </div>
+    <div class="medium-4 columns frontpage-widget">
+      <a href="/videos/">            
+            <img src="/static/img/home/video-302x182.png" alt="" />
+      </a>
+      <h2 class="font-size-h3 t10"><a href="/videos/">Videos</a></h2>
+      <p>Watch recordings of my various talks on YouTube, subscribe to my YouTube channel or catch up with me on my live stream.</p>
+      <p><a class="button tiny radius" href="/blog/">More ›</a></p>
+    </div>
+
+  </div>
+
+  <!-- Blog Content -->
+  <div class="row">
+    <div class="medium-6 columns">
+
+      <h2 class="blog-title"><a href="/ng2-karma-not-finding-tests/">Angular 2 - No Test Found</a></h2>
+      <p>
+        As I get more into Angular 2 I wanted to figure out how to unit test my Angular components. Angular 2 has unit testing built-in
+        to the project that the Angular CLI generates. It uses Karma for the test runner and Jasmine for the testing. The
+        Angular docs also have a really good Testing Guide.
+      </p>
+      <p>
+        When I tried to run the built-in test instead of finding the 3 tests, it found 0 tests. Never having used Karma before, I
+        was unsure what the issue was or where to start troubleshooting. Luckily it turned out to be a really simple fix
+        once I figured it out and it had to do with Chrome v55 not running the test.ts file.
+        <a href="/ng2-karma-not-finding-tests" title="Read Angular 2 - No Test Found"><strong>Read More ›</strong></a>
+      </p>
+
+    </div>
+    <!-- /.medium-5.columns -->
+
+    <div class="medium-6 columns">
+      <p><strong>More Articles</strong></p>
+      <ul class="side-nav">
+        <li><a data-proofer-ignore="" href="/ng2-add-bootstrap/"><strong>Angular 2 - Adding Bootstrap Library</strong></a></li>
+        <li><a data-proofer-ignore="" href="/ng2-your-first-project/"><strong>Angular 2 - Your First Project</strong></a></li>
+        <li><a data-proofer-ignore="" href="/ng2-wtf-my-module-wont-route/"><strong>Angular - WTF Module Won't Route</strong></a></li>
+        <li><a data-proofer-ignore="" href="blog/archive/"><strong>More ›</strong></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  <!-- Footer -->
+  <footer id="footer-content" class="bg-grau">
+    <div id="footer">
+      <div class="row">
+        <div class="medium-6 large-5 columns">
+          <h5 class="shadow-black">About This Site</h5>
+          <p class="shadow-black"> Sharing my knowledge with others in a manner that is easy to understand and consume. <a href="/about/">More ›</a></p>
+        </div>
+        <div class="small-6 medium-3 large-3 large-offset-1 columns">
+          <h5 class="shadow-black">Services</h5>
+          <ul class="no-bullet shadow-black">
+            <li> <a href="" title=""></a></li>
+            <li class="icon-mail"> <a href="/contact/" title="Contact">Contact</a></li>
+            <li class="icon-rss"> <a href="/feed.xml" title="Subscribe to RSS Feed">RSS</a></li>
+            <li class="icon-rss"> <a href="/atom.xml" title="Subscribe to Atom Feed">Atom</a></li>
+            <li class="icon-archive"> <a href="/blog/archive/categoryview" title="See all blog post">Blog Archive</a></li>
+          </ul>
+        </div>
+        <div class="small-6 medium-3 large-3 columns">
+          <h5 class="shadow-black">Thank you</h5>
+          <ul class="no-bullet shadow-black">
+            <li> <a href="" title=""></a></li>
+            <li> <a href="http://entypo.com/" target="_blank" title="Icons by Daniel Bruce">Icons by Daniel Bruce</a></li>
+            <li>
+            <a href="http://unsplash.com/" target="_blank" title="Images by Unsplash">Images by Unsplash</a></li>
+            <li> <a href="http://srobbin.com/jquery-plugins/backstretch/" target="_blank" title="Using Backstretch by Scott Robbin">Using Backstretch</a></li>
+            <li>
+            <a href="http://foundation.zurb.com/" target="_blank" title="Built on Foundation">Built on Foundation</a></li>
+            <li>
+            <a href="http://jekyllrb.com" target="_blank" title="Built On Jekyll">Jekyll</a></li>
+            <li> <a href="http://phlow.github.io/feeling-responsive/" target="_blank" title="Theme by Phlow">Theme by Phlow</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="subfooter">
+      <nav class="row">
+        <section id="subfooter-left" class="small-12 medium-6 columns credits">
+          <p>Created with ♥ by <a href="/about/">Justin James</a>. All content is the property of Justin James and digitaldrummerj.me.
+            This blog, its content, and opinions are my own.</p>
+        </section>
+        <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
+          <ul class="inline-list">
+            <li><a href="https://github.com/digitaldrummerj" target="_blank" class="icon-github" title="Code and such..."></a></li>
+            <li><a href="https://www.youtube.com/channel/UCDMvOL1XSKclxwplUT0fzLA" target="_blank" class="icon-youtube" title="Tech Videos"></a></li>
+            <li><a href="https://twitter.com/digitaldrummerj" target="_blank" class="icon-twitter" title="Twitter"></a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+  </footer>
+  <!-- /#navigation -->
+  <script src="static/js/javascript.min.js"></script>
+
+
+</body>
+
+</html>
